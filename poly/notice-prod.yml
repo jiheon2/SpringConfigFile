@@ -39,5 +39,23 @@ cloud:
   aws:
     region:
       static: ap-northeast-2
+      
 server:
   port: '11001'
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    beans:
+      enabled: true
+    info:
+      enabled: true
+  server:
+    address: localhost
+    port: 12101
