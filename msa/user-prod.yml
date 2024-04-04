@@ -28,6 +28,10 @@ spring:
       password: 1234
   application:
     name: USER-SERVICE
+  boot:
+    admin:
+      client:
+        url: http://loclhost:15000
 
 jwt:
   token:
