@@ -26,3 +26,27 @@ spring:
       database: TestCollection
       username:
       password:
+  application:
+    name: USER-SERVICE
+
+jwt:
+  token:
+    creator: poly
+    refresh:
+      valid:
+        time: '3000'
+      name: jwtRefreshToken
+    access:
+      valid:
+        time: '300'
+      name: jwtAccessToken
+  secret:
+    key: '12341234'
+eureka:
+  client:
+    fetch-registry: 'true'
+    register-with-eureka: 'true'
+    service-url:
+      defaultZone: http://localhost:8751/eureka
+server:
+  port: '11000'
