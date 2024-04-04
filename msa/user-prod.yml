@@ -24,7 +24,7 @@ spring:
       host: 192.168.2.129
       port: 27017
       database: MyDB
-      username: myUser
+      username: admin
       password: 1234
       authentication-database: admin
   application:
