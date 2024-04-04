@@ -1,0 +1,18 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: 'true'
+      show-details: always
+    beans:
+      enabled: 'true'
+    info:
+      enabled: 'true'
+    shutdown:
+      enabled: 'true'
+  server:
+    address: localhost
+    port: '12001'

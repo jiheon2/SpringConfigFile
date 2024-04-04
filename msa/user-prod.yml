@@ -1,0 +1,28 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: 'true'
+      show-details: always
+    beans:
+      enabled: 'true'
+    info:
+      enabled: 'true'
+    shutdown:
+      enabled: true
+  server:
+    address: localhost
+    port: '11001'
+
+# MongoDB Connection
+spring:
+  data:
+    mongodb:
+      host: 192.168.2.129
+      port: 27017
+      database: TestCollection
+      username:
+      password:
