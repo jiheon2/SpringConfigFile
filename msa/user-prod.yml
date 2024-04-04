@@ -24,9 +24,9 @@ spring:
       host: 192.168.2.129
       port: 27017
       database: MyDB
-      username: admin
+      username: myUser
       password: 1234
-      authentication-database: admin
+      uri: mongodb://myUser:1234@192.168.2.129:27017/MyDB
   application:
     name: USER-SERVICE
   boot:
