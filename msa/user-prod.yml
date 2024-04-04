@@ -24,8 +24,6 @@ spring:
       host: 192.168.2.129
       port: 27017
       database: TestCollection
-      username:
-      password:
   application:
     name: USER-SERVICE
 
