@@ -32,7 +32,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://loclhost:15000
+        url: http://localhost:15000
 
 jwt:
   token:
