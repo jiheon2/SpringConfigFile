@@ -26,6 +26,7 @@ spring:
       database: MyDB
       username: myUser
       password: 1234
+      authentication-database: admin
   application:
     name: USER-SERVICE
   boot:
