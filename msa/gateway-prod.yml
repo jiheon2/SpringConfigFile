@@ -31,6 +31,8 @@ spring:
         url: http://localhost:15000
 
 jwt:
+  secret:
+    key: '12341234'
   token:
     access:
       valid:
@@ -41,7 +43,6 @@ jwt:
         time: '3000'
       name: jwtRefreshToken
     creator: poly
-  secret:
-    key: '12341234'
+
 server:
   port: '13000'
