@@ -21,7 +21,7 @@ eureka:
   client:
     register-with-eureka: 'true'
     fetch-registry: 'true'
-    service-url: http://loclhost:8761/eureka
+    service-url: http://loclhost:8751/eureka
 spring:
   application:
     name: API-GATEWAY
@@ -42,6 +42,6 @@ jwt:
       name: jwtRefreshToken
     creator: poly
   secret:
-    key: '1234'
+    key: '12341234'
 server:
   port: '13000'
