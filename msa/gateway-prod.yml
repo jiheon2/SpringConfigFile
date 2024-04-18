@@ -15,7 +15,7 @@ management:
       enabled: 'true'
   server:
     address: localhost
-    port: '13001'
+    port: '11001'
 
 eureka:
   client:
@@ -42,6 +42,6 @@ jwt:
       name: jwtRefreshToken
     creator: poly
   secret:
-    key: '1234'
+    key: '12345678123456781234567812345678123456781234'
 server:
-  port: '13000'
+  port: '11000'

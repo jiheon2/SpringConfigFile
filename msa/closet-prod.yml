@@ -15,4 +15,40 @@ management:
       enabled: 'true'
   server:
     address: localhost
-    port: '12001'
+    port: '14001'
+
+spring:
+  jpa:
+    generate-ddl: 'false'
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+        format_sql: 'true'
+    show-sql: 'true'
+    open-in-viw: 'false'
+  application:
+    name: CLOSET-SERVICE
+  boot:
+    admin:
+      client:
+        url: http://localhost:15000
+
+jwt:
+  token:
+    access:
+      name: jwtAccessToken
+
+eureka:
+  client:
+    fetch-registry: 'true'
+    register-with-eureka: 'true'
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: '14000'
+api:
+  gateway: localhost:11000

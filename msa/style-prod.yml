@@ -12,12 +12,11 @@ management:
     info:
       enabled: 'true'
     shutdown:
-      enabled: true
+      enabled: 'true'
   server:
     address: localhost
-    port: '11001'
+    port: '18001'
 
-# MongoDB Connection
 spring:
   jpa:
     generate-ddl: 'false'
@@ -31,16 +30,8 @@ spring:
         format_sql: 'true'
     show-sql: 'true'
     open-in-viw: 'false'
-#  data:
-#    mongodb:
-#      host: 192.168.2.129
-#      port: 27017
-#      database: MyDB
-#      username: myUser
-#      password: 1234
-#      uri: mongodb://myUser:1234@192.168.2.129:27017/MyDB
   application:
-    name: USER-SERVICE
+    name: STYLE-SERVICE
   boot:
     admin:
       client:
@@ -48,16 +39,9 @@ spring:
 
 jwt:
   token:
-    refresh:
-      valid:
-        time: '3000'
-      name: jwtRefreshToken
     access:
-      valid:
-        time: '300'
       name: jwtAccessToken
-  secret:
-    key: '12345678123456781234567812345678123456781234'
+
 eureka:
   client:
     fetch-registry: 'true'
@@ -65,6 +49,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 server:
-  port: '13000'
+  port: '18000'
 api:
   gateway: localhost:11000
