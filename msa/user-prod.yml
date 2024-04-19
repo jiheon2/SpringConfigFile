@@ -17,7 +17,7 @@ management:
     address: localhost
     port: '11001'
 
-# MongoDB Connection
+# JPA
 spring:
   jpa:
     generate-ddl: 'false'
@@ -31,20 +31,17 @@ spring:
         format_sql: 'true'
     show-sql: 'true'
     open-in-viw: 'false'
-#  data:
-#    mongodb:
-#      host: 192.168.2.129
-#      port: 27017
-#      database: MyDB
-#      username: myUser
-#      password: 1234
-#      uri: mongodb://myUser:1234@192.168.2.129:27017/MyDB
   application:
     name: USER-SERVICE
   boot:
     admin:
       client:
         url: http://localhost:15000
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: '1234'
+    username: closet
+    url: jdbc:mariadb://192.168.2.134:3306/userDB
 
 jwt:
   token:
