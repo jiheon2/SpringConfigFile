@@ -48,6 +48,7 @@ spring:
 
 jwt:
   token:
+    creator: closet
     refresh:
       valid:
         time: '3000'
