@@ -42,6 +42,9 @@ spring:
     password: '1234'
     username: closet
     url: jdbc:mariadb://192.168.2.134:3306/userDB
+  redis:
+    host: 192.168.2.134
+    port: 6379
 
 jwt:
   token:
@@ -55,9 +58,7 @@ jwt:
       name: jwtAccessToken
   secret:
     key: '12345678123456781234567812345678123456781234'
-  redis:
-    host: 192.168.2.134
-    port: 6379
+
 eureka:
   client:
     fetch-registry: 'true'
