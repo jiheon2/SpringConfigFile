@@ -36,6 +36,16 @@ spring:
     admin:
       client:
         url: http://localhost:15000
+  # MongoDB Connection
+  data:
+    mongodb:
+      host: 192.168.2.134
+      port: 27017
+      database: ClosetService
+      username: closetUser
+      password: 1234
+      uri: mongodb://closetUser:1234@192.168.2.134:27017/ClosetService
+
 
 jwt:
   token:
