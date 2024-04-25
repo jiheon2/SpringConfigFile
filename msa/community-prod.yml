@@ -45,7 +45,11 @@ spring:
       username: communityUser
       password: 1234
       uri: mongodb://communityUser:1234@192.168.2.134:27017/CommunityService
-
+servlet:
+  multipart:
+    max-file-size: 256MB
+    max-request-size: 256MB
+    enabled: true
 
 jwt:
   token:
