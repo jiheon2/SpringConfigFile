@@ -31,6 +31,24 @@ spring:
       client:
         url: http://localhost:15000
 
+cloud:
+  gateway:
+    default-filters:
+      - DedupeReponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
+    globalcors:
+      cors-configurations:
+        '[/**]':
+          allowedOrigins: 'http://localhost:12000'
+          allow-credentials: true
+          allowedHeaders: '*'
+          allowedMethods:
+            - PUT
+            - GET
+            - POST
+            - DELETE
+            - OPTIONS
+
+
 jwt:
   token:
     access:
