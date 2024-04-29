@@ -15,7 +15,7 @@ management:
       enabled: 'true'
   server:
     address: localhost
-    port: '11001'
+    port: '13001'
 
 eureka:
   client:
@@ -31,22 +31,24 @@ spring:
       client:
         url: http://localhost:15000
 
-cloud:
-  gateway:
-    default-filters:
-      - DedupeReponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
-    globalcors:
-      cors-configurations:
-        '[/**]':
-          allowedOrigins: 'http://localhost:12000'
-          allow-credentials: true
-          allowedHeaders: '*'
-          allowedMethods:
-            - PUT
-            - GET
-            - POST
-            - DELETE
-            - OPTIONS
+#cloud:
+#  gateway:
+#    default-filters:
+#      - DedupeReponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
+#    globalcors:
+#      cors-configurations:
+#        '[/**]':
+#          allowedOrigins:
+#            - 'http://localhost:12000'
+#            - 'http://localhost:13000'
+#          allow-credentials: true
+#          allowedHeaders: '*'
+#          allowedMethods:
+#            - PUT
+#            - GET
+#            - POST
+#            - DELETE
+#            - OPTIONS
 
 
 jwt:
@@ -63,4 +65,4 @@ jwt:
   secret:
     key: '12345678123456781234567812345678123456781234'
 server:
-  port: '11000'
+  port: '13000'
