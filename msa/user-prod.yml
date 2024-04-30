@@ -15,7 +15,7 @@ management:
       enabled: true
   server:
     address: localhost
-    port: '11001'
+    port: '13001'
 
 # JPA
 spring:
@@ -67,6 +67,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 server:
-  port: '11000'
+  port: '13000'
 api:
-  gateway: localhost:13000
+  gateway: localhost:11000
