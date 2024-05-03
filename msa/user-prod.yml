@@ -70,3 +70,6 @@ server:
   port: '13000'
 api:
   gateway: localhost:11000
+
+kakao:
+  apiKey: ed10bfc27141294be50ae347e58f1008
