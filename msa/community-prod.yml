@@ -1,68 +1,68 @@
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: '*'
-#  endpoint:
-#    health:
-#      enabled: 'true'
-#      show-details: always
-#    beans:
-#      enabled: 'true'
-#    info:
-#      enabled: 'true'
-#    shutdown:
-#      enabled: 'true'
-#  server:
-#    address: localhost
-#    port: '16001'
-#
-#spring:
-#  jpa:
-#    generate-ddl: 'false'
-#    hibernate:
-#      ddl-auto: none
-#      naming:
-#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-#    properties:
-#      hibernate:
-#        default_batch_fetch_size: 100
-#        format_sql: 'true'
-#    show-sql: 'true'
-#    open-in-viw: 'false'
-#  application:
-#    name: COMMUNITY-SERVICE
-#  boot:
-#    admin:
-#      client:
-#        url: http://localhost:15000
-#  # MongoDB Connection
-#  data:
-#    mongodb:
-#      host: 192.168.2.134
-#      port: 27017
-#      database: CommunityService
-#      username: communityUser
-#      password: 1234
-#      uri: mongodb://communityUser:1234@192.168.2.134:27017/CommunityService
-#servlet:
-#  multipart:
-#    max-file-size: 256MB
-#    max-request-size: 256MB
-#    enabled: true
-#
-#jwt:
-#  token:
-#    access:
-#      name: jwtAccessToken
-#
-#eureka:
-#  client:
-#    fetch-registry: 'true'
-#    register-with-eureka: 'true'
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka
-#server:
-#  port: '16000'
-#api:
-#  gateway: localhost:11000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: 'true'
+      show-details: always
+    beans:
+      enabled: 'true'
+    info:
+      enabled: 'true'
+    shutdown:
+      enabled: 'true'
+  server:
+    address: localhost
+    port: '16001'
+
+spring:
+  jpa:
+    generate-ddl: 'false'
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+        format_sql: 'true'
+    show-sql: 'true'
+    open-in-viw: 'false'
+  application:
+    name: COMMUNITY-SERVICE
+  boot:
+    admin:
+      client:
+        url: http://localhost:15000
+  # MongoDB Connection
+  data:
+    mongodb:
+      host: 192.168.2.134
+      port: 27017
+      database: CommunityService
+      username: communityUser
+      password: 1234
+      uri: mongodb://communityUser:1234@192.168.2.134:27017/CommunityService
+servlet:
+  multipart:
+    max-file-size: 256MB
+    max-request-size: 256MB
+    enabled: true
+
+jwt:
+  token:
+    access:
+      name: jwtAccessToken
+
+eureka:
+  client:
+    fetch-registry: 'true'
+    register-with-eureka: 'true'
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: '16000'
+api:
+  gateway: localhost:11000
