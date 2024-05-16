@@ -45,6 +45,14 @@ spring:
       username: communityUser
       password: 1234
       uri: mongodb://communityUser:1234@192.168.2.134:27017/CommunityService
+  cloud:
+    gcp:
+      storage:
+        credentials:
+          location: classpath:/resources/closetproject-419105-297cdb4ae5b4.json
+        bucket: msa-post-bucket
+        project-id: closetproject-419105
+
 servlet:
   multipart:
     max-file-size: 256MB
