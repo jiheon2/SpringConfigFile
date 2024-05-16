@@ -46,13 +46,12 @@ spring:
       password: 1234
       uri: mongodb://closetUser:1234@192.168.2.134:27017/ClosetService
   cloud:
-    cloud:
-      gcp:
-        storage:
-          credentials:
-            location: classpath:/resources/closetproject-419105-297cdb4ae5b4.json
-          bucket: msa-closet-bucket
-          project-id: closetproject-419105
+    gcp:
+      storage:
+        credentials:
+          location: classpath:/resources/closetproject-419105-297cdb4ae5b4.json
+        bucket: msa-closet-bucket
+        project-id: closetproject-419105
 
 
 jwt:
