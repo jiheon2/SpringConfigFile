@@ -49,7 +49,7 @@ spring:
     gcp:
       storage:
         credentials:
-          location: classpath:/resources/closetproject-419105-297cdb4ae5b4.json
+          location: /resources/closetproject-419105-297cdb4ae5b4.json
         bucket: msa-closet-bucket
         project-id: closetproject-419105
 
