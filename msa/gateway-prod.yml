@@ -31,6 +31,9 @@ spring:
       client:
         url: http://localhost:15000
 
+server:
+  port: 11000
+
 jwt:
   token:
     creator: closet
