@@ -52,16 +52,14 @@ spring:
           model: gpt-4-visual-preview
           temperature: 0.7
 
-    vectorstore:
-      chroma:
-        client:
-          host: localhost
-          port: 8000
-          initialize-schema: true
-        store:
-          collection-name: TestCollection
-
-
+#    vectorstore:
+#      chroma:
+#        client:
+#          host: localhost
+#          port: 8000
+#          initialize-schema: true
+#        store:
+#          collection-name: TestCollection
 jwt:
   token:
     access:
