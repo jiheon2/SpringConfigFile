@@ -47,6 +47,8 @@ spring:
       uri: mongodb://styleUser:1234@192.168.2.134:27017/StyleService
   ai:
     openai:
+      api:
+        key: 'sk-proj-eraW7VPjwFB5FHiuX94BT3BlbkFJUsN32BUAn5KWyJq8mo4W'
       chat:
         options:
           model: gpt-4-visual-preview
