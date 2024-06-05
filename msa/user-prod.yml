@@ -69,7 +69,7 @@ eureka:
 server:
   port: '13000'
 api:
-  gateway: http://35.240.158.180:11000
+  gateway: 35.240.158.180:11000
 
 kakao:
   apiKey: ed10bfc27141294be50ae347e58f1008
