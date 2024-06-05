@@ -65,11 +65,11 @@ eureka:
     fetch-registry: 'true'
     register-with-eureka: 'true'
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://35.240.167.182:8761/eureka
 server:
   port: '13000'
 api:
-  gateway: localhost:11000
+  gateway: http://35.240.158.180:11000
 
 kakao:
   apiKey: ed10bfc27141294be50ae347e58f1008
