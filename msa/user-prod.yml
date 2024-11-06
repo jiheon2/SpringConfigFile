@@ -40,11 +40,11 @@ spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     password: '1234'
-    username: closet
-    url: jdbc:mariadb://192.168.2.134:3306/userDB
-  redis:
-    host: 192.168.2.134
-    port: 6379
+    username: security
+    url: jdbc:mariadb://192.168.111.128:3306/security
+  # redis:
+  #   host: 192.168.2.134
+  #   port: 6379
 
 jwt:
   token:
